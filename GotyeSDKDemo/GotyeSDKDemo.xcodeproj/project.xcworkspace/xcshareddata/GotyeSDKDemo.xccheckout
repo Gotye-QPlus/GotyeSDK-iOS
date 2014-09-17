@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>59F4C8CE-D3A8-40F7-B492-5B0604D3EFF4</string>
+	<key>IDESourceControlProjectName</key>
+	<string>GotyeSDKDemo</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>0A0FFD17-7C99-49C8-B56A-BEBAF80D584D</key>
+		<string>https://192.168.1.18/svn/QINPLUS_SDK_VER2</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>branches/GotyeSDK_OpenSource/GotyeSDKDemo/GotyeSDKDemo.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>0A0FFD17-7C99-49C8-B56A-BEBAF80D584D</key>
+		<string>../../../../../..</string>
+	</dict>
+	<key>IDESourceControlProjectRepositoryRootDictionary</key>
+	<dict>
+		<key>0A0FFD17-7C99-49C8-B56A-BEBAF80D584D</key>
+		<string>https://192.168.1.18/svn/QINPLUS_SDK_VER2</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://192.168.1.18/svn/QINPLUS_SDK_VER2/Client/iOS/trunk/GotyeSDKDemo/GotyeSDKDemo.xcodeproj</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>0A0FFD17-7C99-49C8-B56A-BEBAF80D584D</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.subversion</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>0A0FFD17-7C99-49C8-B56A-BEBAF80D584D</string>
+			<key>IDESourceControlWCCName</key>
+			<string>QINPLUS_SDK_VER2</string>
+		</dict>
+	</array>
+</dict>
+</plist>

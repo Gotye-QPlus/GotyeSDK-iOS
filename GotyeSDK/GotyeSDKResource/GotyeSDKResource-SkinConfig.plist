@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>TextColorSendVoiceNormal</key>
+	<string>#2FBDB8</string>
+	<key>TextColorSendVoicePressed</key>
+	<string>#FFFFFF</string>
+	<key>TextColorBubbleDurationLeft</key>
+	<string>#2FBDB8</string>
+	<key>TextColorBubbleDurationRight</key>
+	<string>#FFFFFF</string>
+	<key>TextColorMainTitle</key>
+	<string>#FFFFFF</string>
+	<key>TextColorBack</key>
+	<string>#FFFFFF</string>
+	<key>TextColorTopCellName</key>
+	<string>#FFFFFF</string>
+	<key>TextColorNormalCellName</key>
+	<string>#000000</string>
+	<key>TextColorMorePanel</key>
+	<string>#FFFFFF</string>
+	<key>TextColorTime</key>
+	<string>#767676</string>
+	<key>TextColorChatName</key>
+	<string>#767676</string>
+	<key>TextColorBubbleLeft</key>
+	<string>#000000</string>
+	<key>TextColorBubbleRight</key>
+	<string>#FFFFFF</string>
+	<key>TextColorHeaderAndFooter</key>
+	<string>#576C89</string>
+	<key>TextColorUserListName</key>
+	<string>#767676</string>
+	<key>TextColorPopUserInfo</key>
+	<string>#FFFFFF</string>
+	<key>TextColorPopTitle</key>
+	<string>#FFFFFF</string>
+</dict>
+</plist>

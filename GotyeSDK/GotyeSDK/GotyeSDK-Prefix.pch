@@ -1,0 +1,45 @@
+//
+//  Prefix header
+//
+//  The contents of this file are implicitly included at the beginning of every source file.
+//
+
+#ifdef __OBJC__
+    #import <Foundation/Foundation.h>
+    #import <UIKit/UIKit.h>
+    #import <CoreText/CoreText.h>
+    #import "GotyeReplaceMacro.h"
+#endif
+
+#ifdef DEBUG
+#    define DLog(...) NSLog(__VA_ARGS__)
+#else
+#    define DLog(...)
+#endif
+
+#ifndef GOTYESDK_WEAK_VAR
+#if __has_feature(objc_arc_weak)
+#define GOTYESDK_WEAK_VAR __weak
+#elif __has_feature(objc_arc)
+#define GOTYESDK_WEAK_VAR __unsafe_unretained
+#else
+#define GOTYESDK_WEAK_VAR
+#endif
+#endif
+
+#ifndef GOTYESDK_WEAK_ATTR
+#if __has_feature(objc_arc_weak)
+#define GOTYESDK_WEAK_ATTR weak
+#elif __has_feature(objc_arc)
+#define GOTYESDK_WEAK_ATTR unsafe_unretained
+#else
+#define GOTYESDK_WEAK_ATTR assign
+#endif
+#endif
+
+#define IS_IPAD ([UIDevice currentDevice].userInterfaceIdiom == UIUserInterfaceIdiomPad)
+#define kMaxVoiceLenth          (60000)
+#define IOS_VERSION_GREATER_THAN_7_0 ([[[UIDevice currentDevice]systemVersion]floatValue] >= 7.0)
+#define IOS_VERSION_LESS_THAN_7_0 ([[[UIDevice currentDevice]systemVersion]floatValue] < 7.0)
+
+#define kSidebarWidth (118)

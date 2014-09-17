@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>B9F63503-B36C-483B-A24F-C50902C5EC35</string>
+	<key>IDESourceControlProjectName</key>
+	<string>NewQPlusSDKDemo</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>E6CE9A59-3F03-4AA1-A3C1-9D1CD9229F31</key>
+		<string>https://192.168.1.18/svn/PROJECT_IOS</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>New_QPlusSDK_zh/trunk/NewQPlusSDKDemo/NewQPlusSDKDemo.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>E6CE9A59-3F03-4AA1-A3C1-9D1CD9229F31</key>
+		<string>../../../../..</string>
+	</dict>
+	<key>IDESourceControlProjectRepositoryRootDictionary</key>
+	<dict>
+		<key>E6CE9A59-3F03-4AA1-A3C1-9D1CD9229F31</key>
+		<string>https://192.168.1.18/svn/PROJECT_IOS</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://192.168.1.18/svn/PROJECT_IOS/New_QPlusSDK_zh/trunk/NewQPlusSDKDemo/NewQPlusSDKDemo.xcodeproj</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>E6CE9A59-3F03-4AA1-A3C1-9D1CD9229F31</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.subversion</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>E6CE9A59-3F03-4AA1-A3C1-9D1CD9229F31</string>
+			<key>IDESourceControlWCCName</key>
+			<string>PROJECT_IOS</string>
+		</dict>
+	</array>
+</dict>
+</plist>

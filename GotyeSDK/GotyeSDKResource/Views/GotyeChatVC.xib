@@ -1,0 +1,444 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="5053" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none">
+    <dependencies>
+        <deployment defaultVersion="1072" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="GotyeChatVC">
+            <connections>
+                <outlet property="_backBtn" destination="dg3-IN-rWY" id="n2c-kd-9O9"/>
+                <outlet property="_backToGameBtn" destination="hSg-6b-83b" id="szv-zc-3Oz"/>
+                <outlet property="_bgImageView" destination="Z4d-Qv-Cj5" id="CSN-Vn-fzP"/>
+                <outlet property="_bottomView" destination="qqW-mZ-7Q4" id="Bmf-YZ-X6v"/>
+                <outlet property="_chatContentView" destination="uo2-7n-EbR" id="mfR-fC-dB2"/>
+                <outlet property="_extraPanelView" destination="Bkh-ag-j3g" id="NX4-hG-oIF"/>
+                <outlet property="_greenLine0" destination="zMA-Eo-Bex" id="Qwg-b2-2jf"/>
+                <outlet property="_greenLine1" destination="VUM-O7-ZVX" id="8T1-X3-bj9"/>
+                <outlet property="_greenLine2" destination="T5n-ft-cgL" id="0y3-0A-Kwp"/>
+                <outlet property="_greenLine3" destination="ipl-0q-5cp" id="yiS-zi-SWL"/>
+                <outlet property="_minimizeBtnLandscape" destination="E0O-wf-0Ld" id="Mkt-l0-uUc"/>
+                <outlet property="_moreBtn" destination="uzB-YR-PO1" id="6Rw-Wq-PIL"/>
+                <outlet property="_morePanel" destination="w76-Tl-5OX" id="FZ6-3a-MX4"/>
+                <outlet property="_msgListView" destination="AFf-bz-7hr" id="wyJ-HN-GPf"/>
+                <outlet property="_roomIconView" destination="hFo-vi-wne" id="nIA-wC-bcu"/>
+                <outlet property="_roomUserListBtn" destination="kwz-7G-JdC" id="EYD-Dc-4Rs"/>
+                <outlet property="_sendVoiceBtn" destination="1Em-xV-NcU" id="Xvt-1H-zi3"/>
+                <outlet property="_showExtraBtn" destination="Ucs-w4-bj4" id="wKK-8T-fXe"/>
+                <outlet property="_speakingIndicator" destination="TxR-0O-EBu" id="Kg6-qD-37x"/>
+                <outlet property="_speakingView" destination="eFH-Ls-iaC" id="w6r-EG-5cI"/>
+                <outlet property="_textArea" destination="MsI-u5-83P" id="QQR-Wk-fPR"/>
+                <outlet property="_textAreaBg" destination="a1N-zf-4fa" id="KB7-yf-07n"/>
+                <outlet property="_textModeBtn" destination="84s-1S-8gY" id="jv8-gr-UO6"/>
+                <outlet property="_textModeView" destination="XOI-3Q-dFj" id="hMb-Hr-6uu"/>
+                <outlet property="_titleLabel" destination="Nui-A8-19k" id="8Q9-08-8dA"/>
+                <outlet property="_topBarBG" destination="fra-O8-JeN" id="aRh-hf-9pv"/>
+                <outlet property="_topView" destination="wal-Vp-dNd" id="N6b-DH-O3w"/>
+                <outlet property="_userListBtnLandscape" destination="Vcr-jI-Goy" id="TW7-2U-EeN"/>
+                <outlet property="_voiceError" destination="2Dh-BN-3dj" id="ZfA-uU-aUy"/>
+                <outlet property="_voiceIcon" destination="4VP-GV-DO3" id="YDh-c6-GB7"/>
+                <outlet property="_voiceModeBtn" destination="XPD-ZA-ljE" id="NUb-b2-F3J"/>
+                <outlet property="_voiceTooShortView" destination="7f1-Aj-0aT" id="L1F-JE-hHH"/>
+                <outlet property="view" destination="1" id="EzP-d4-zFR"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="1">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chat_bg.png" id="Z4d-Qv-Cj5">
+                    <rect key="frame" x="0.0" y="50" width="320" height="518"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                </imageView>
+                <view contentMode="scaleToFill" id="uo2-7n-EbR">
+                    <rect key="frame" x="0.0" y="54" width="320" height="514"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    <subviews>
+                        <tableView contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="AFf-bz-7hr" customClass="GotyeTouchTableView">
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="466"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <connections>
+                                <outlet property="dataSource" destination="-1" id="yc1-bU-Wgv"/>
+                                <outlet property="delegate" destination="-1" id="hhT-9h-sNR"/>
+                            </connections>
+                        </tableView>
+                        <view clipsSubviews="YES" contentMode="scaleToFill" id="qqW-mZ-7Q4">
+                            <rect key="frame" x="0.0" y="466" width="320" height="48"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                            <subviews>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chat_bottom_bar_bg.png" id="1Tb-8Q-2m6">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="48"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <rect key="contentStretch" x="0.5" y="0.5" width="0.0" height="0.0"/>
+                                </imageView>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="84s-1S-8gY">
+                                    <rect key="frame" x="0.0" y="0.0" width="50" height="48"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                    <inset key="contentEdgeInsets" minX="10" minY="9" maxX="10" maxY="9"/>
+                                    <state key="normal" image="chat_bottom_bar_btn_keyboard_normal.png">
+                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                    <state key="highlighted" image="chat_bottom_bar_btn_keyboard_pressed.png"/>
+                                    <connections>
+                                        <action selector="switchBtnClicked:" destination="-1" eventType="touchUpInside" id="qE1-HC-42a"/>
+                                    </connections>
+                                </button>
+                                <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="XPD-ZA-ljE">
+                                    <rect key="frame" x="0.0" y="0.0" width="50" height="48"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                    <inset key="imageEdgeInsets" minX="10" minY="9" maxX="10" maxY="9"/>
+                                    <state key="normal" image="chat_bottom_bar_btn_voice_normal.png">
+                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                    <state key="highlighted" image="chat_bottom_bar_btn_voice_pressed.png"/>
+                                    <connections>
+                                        <action selector="switchBtnClicked:" destination="-1" eventType="touchUpInside" id="fbL-EE-6rc"/>
+                                    </connections>
+                                </button>
+                                <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="1Em-xV-NcU">
+                                    <rect key="frame" x="51" y="10" width="219" height="29"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                    <state key="normal" title="按住 说话">
+                                        <color key="titleColor" red="0.18431372549019609" green="0.74117647058823533" blue="0.72156862745098038" alpha="1" colorSpace="calibratedRGB"/>
+                                    </state>
+                                    <state key="highlighted" title="松开 发送">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="sendVoiceBtnDown:" destination="-1" eventType="touchDown" id="rTa-h7-6g3"/>
+                                        <action selector="sendVoiceBtnUp:" destination="-1" eventType="touchUpOutside" id="Umo-N1-SfT"/>
+                                        <action selector="sendVoiceBtnUp:" destination="-1" eventType="touchUpInside" id="kx1-xn-fjb"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Ucs-w4-bj4">
+                                    <rect key="frame" x="270" y="0.0" width="50" height="48"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                    <inset key="imageEdgeInsets" minX="10" minY="9" maxX="10" maxY="9"/>
+                                    <state key="normal" image="chat_bottom_bar_btn_extra_normal.png">
+                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                    <state key="selected" image="chat_bottom_bar_btn_extra_pressed.png"/>
+                                    <state key="highlighted" image="chat_bottom_bar_btn_extra_pressed.png"/>
+                                    <connections>
+                                        <action selector="extraBtnClicked:" destination="-1" eventType="touchUpInside" id="SAR-LT-Mov"/>
+                                    </connections>
+                                </button>
+                                <view contentMode="scaleToFill" id="XOI-3Q-dFj">
+                                    <rect key="frame" x="51" y="-40" width="219" height="33"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chat_bottom_bar_bg_text.png" id="a1N-zf-4fa">
+                                            <rect key="frame" x="0.0" y="0.0" width="219" height="33"/>
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                            <rect key="contentStretch" x="0.5" y="0.5" width="0.0" height="0.0"/>
+                                        </imageView>
+                                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="MsI-u5-83P">
+                                            <rect key="frame" x="0.0" y="0.0" width="219" height="33"/>
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                            <color key="textColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences" returnKeyType="send"/>
+                                            <connections>
+                                                <outlet property="delegate" destination="-1" id="xWx-1P-j4e"/>
+                                            </connections>
+                                        </textView>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                                </view>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                        </view>
+                        <view hidden="YES" clipsSubviews="YES" contentMode="scaleToFill" id="eFH-Ls-iaC">
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="514"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" id="VUP-7l-fzb">
+                                    <rect key="frame" x="85" y="182" width="150" height="150"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="chat_speaking_bg.png" id="UVD-oM-Zkj">
+                                            <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                            <rect key="contentStretch" x="0.5" y="0.5" width="0.0" height="0.0"/>
+                                        </imageView>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="chat_speaking_icon_mic.png" id="4VP-GV-DO3">
+                                            <rect key="frame" x="43" y="30" width="64" height="72"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                        </imageView>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chat_speaking_state_0.png" id="TxR-0O-EBu">
+                                            <rect key="frame" x="52" y="126" width="46" height="8"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                        </imageView>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </view>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        </view>
+                        <view hidden="YES" clipsSubviews="YES" contentMode="scaleToFill" id="7f1-Aj-0aT">
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="514"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" id="4Ny-gS-Wtv">
+                                    <rect key="frame" x="85" y="182" width="150" height="150"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="chat_speaking_bg.png" id="o1O-Tp-bMs">
+                                            <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                            <rect key="contentStretch" x="0.5" y="0.5" width="0.0" height="0.0"/>
+                                        </imageView>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="chat_ic_voice_too_short.png" id="4Ek-iz-f5J">
+                                            <rect key="frame" x="61" y="24" width="27" height="78"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                        </imageView>
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="说话时间太短" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="2Dh-BN-3dj">
+                                            <rect key="frame" x="20" y="115" width="110" height="21"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </view>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        </view>
+                        <view hidden="YES" contentMode="scaleToFill" id="Bkh-ag-j3g">
+                            <rect key="frame" x="123" y="391" width="170" height="65"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES"/>
+                            <subviews>
+                                <imageView userInteractionEnabled="NO" alpha="0.69999999999999996" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chat_extra_panel_bg.png" id="xvZ-Ia-88r">
+                                    <rect key="frame" x="0.0" y="0.0" width="170" height="65"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                </imageView>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="eBR-jf-l1p">
+                                    <rect key="frame" x="117" y="14" width="38" height="38"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                    <state key="normal" image="chat_extra_btn_emotion.png">
+                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="emotionBtnClicked:" destination="-1" eventType="touchUpInside" id="aIU-lx-sdv"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="cMT-0D-z5m">
+                                    <rect key="frame" x="66" y="15" width="38" height="38"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                    <state key="normal" image="chat_extra_btn_picture.png">
+                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="usePictureBtnClicked:" destination="-1" eventType="touchUpInside" id="3hR-IP-Erf"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="oNJ-VP-QnM">
+                                    <rect key="frame" x="15" y="15" width="38" height="38"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <state key="normal" image="chat_extra_btn_camera.png">
+                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="useCameraBtnClicked:" destination="-1" eventType="touchUpInside" id="KCn-5y-Ubo"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                </view>
+                <view contentMode="scaleToFill" id="w76-Tl-5OX">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="42"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="titlebar_more_bg.png" id="smo-Xq-ZUm">
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="42"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        </imageView>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="titlebar_more_divider.png" id="RGb-DO-5dh">
+                            <rect key="frame" x="160" y="13" width="1" height="20"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="kwz-7G-JdC">
+                            <rect key="frame" x="15" y="5" width="130" height="35"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <inset key="imageEdgeInsets" minX="12" minY="7" maxX="100" maxY="8"/>
+                            <state key="normal" title="聊天室成员" image="titlebar_more_room_member.png">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="highlighted">
+                                <color key="titleColor" red="1" green="1" blue="1" alpha="0.35000000000000003" colorSpace="calibratedRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="showUserListBtnClicked:" destination="-1" eventType="touchUpInside" id="sFg-mp-0Wc"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="hSg-6b-83b">
+                            <rect key="frame" x="175" y="5" width="130" height="35"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <inset key="titleEdgeInsets" minX="0.0" minY="0.0" maxX="10" maxY="0.0"/>
+                            <inset key="imageEdgeInsets" minX="12" minY="9" maxX="96" maxY="10"/>
+                            <state key="normal" title="回到应用" image="titlebar_more_back.png">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="highlighted">
+                                <color key="titleColor" red="1" green="1" blue="1" alpha="0.35000000000000003" colorSpace="calibratedRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="minimizeBtnClicked:" destination="-1" eventType="touchUpInside" id="n6r-Qv-8Bh"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                </view>
+                <view contentMode="scaleToFill" id="wal-Vp-dNd">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="54"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="titlebar_bg.png" id="fra-O8-JeN">
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="54"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            <rect key="contentStretch" x="0.5" y="0.5" width="0.0" height="0.0"/>
+                        </imageView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="dg3-IN-rWY">
+                            <rect key="frame" x="10" y="12" width="60" height="30"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <inset key="titleEdgeInsets" minX="0.0" minY="9" maxX="8" maxY="8"/>
+                            <inset key="imageEdgeInsets" minX="8" minY="9" maxX="42" maxY="8"/>
+                            <state key="normal" title="返回" image="titlebar_ic_back_arrow.png" backgroundImage="titlebar_bg_back_btn.png">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="highlighted">
+                                <color key="titleColor" red="1" green="1" blue="1" alpha="0.34999999999999998" colorSpace="calibratedRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="exitBtnClicked:" destination="-1" eventType="touchUpInside" id="jWY-Nk-hQ2"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="Nui-A8-19k">
+                            <rect key="frame" x="75" y="9" width="171" height="35"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="uzB-YR-PO1">
+                            <rect key="frame" x="260" y="0.0" width="60" height="54"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <inset key="imageEdgeInsets" minX="15" minY="12" maxX="15" maxY="12"/>
+                            <state key="normal" image="titlebar_btn_more_normal.png">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="selected" image="titlebar_btn_more_pressed.png"/>
+                            <state key="highlighted" image="titlebar_btn_more_pressed.png"/>
+                            <connections>
+                                <action selector="moreBtnClicked:" destination="-1" eventType="touchUpInside" id="KLt-VY-JmH"/>
+                            </connections>
+                        </button>
+                        <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="titlebar_ic_room.png" id="hFo-vi-wne">
+                            <rect key="frame" x="142" y="10" width="36" height="34"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                        <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="green_line.png" id="zMA-Eo-Bex">
+                            <rect key="frame" x="102" y="27" width="116" height="1"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                        <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="green_line.png" id="VUM-O7-ZVX">
+                            <rect key="frame" x="102" y="27" width="116" height="1"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                        <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="green_line.png" id="T5n-ft-cgL">
+                            <rect key="frame" x="102" y="27" width="116" height="1"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                        <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="green_line.png" id="ipl-0q-5cp">
+                            <rect key="frame" x="102" y="27" width="116" height="1"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                        <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Vcr-jI-Goy">
+                            <rect key="frame" x="137" y="12" width="46" height="30"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                            <state key="normal" title="聊天室成员">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="highlighted">
+                                <color key="titleColor" red="1" green="1" blue="1" alpha="0.35000000000000003" colorSpace="calibratedRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="showUserListBtnClicked:" destination="-1" eventType="touchUpInside" id="6Rn-lk-JPn"/>
+                            </connections>
+                        </button>
+                        <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="E0O-wf-0Ld">
+                            <rect key="frame" x="137" y="12" width="46" height="30"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                            <state key="normal" title="回到应用">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="highlighted">
+                                <color key="titleColor" red="1" green="1" blue="1" alpha="0.35000000000000003" colorSpace="calibratedRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="minimizeBtnClicked:" destination="-1" eventType="touchUpInside" id="rlA-YY-Uzk"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.89803921568627454" green="0.89803921568627454" blue="0.89803921568627454" alpha="1" colorSpace="calibratedRGB"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="chat_bg.png" width="60" height="60"/>
+        <image name="chat_bottom_bar_bg.png" width="147" height="97"/>
+        <image name="chat_bottom_bar_bg_text.png" width="229" height="29"/>
+        <image name="chat_bottom_bar_btn_extra_normal.png" width="59" height="59"/>
+        <image name="chat_bottom_bar_btn_extra_pressed.png" width="59" height="59"/>
+        <image name="chat_bottom_bar_btn_keyboard_normal.png" width="59" height="59"/>
+        <image name="chat_bottom_bar_btn_keyboard_pressed.png" width="59" height="59"/>
+        <image name="chat_bottom_bar_btn_voice_normal.png" width="59" height="59"/>
+        <image name="chat_bottom_bar_btn_voice_pressed.png" width="59" height="59"/>
+        <image name="chat_extra_btn_camera.png" width="76" height="76"/>
+        <image name="chat_extra_btn_emotion.png" width="76" height="76"/>
+        <image name="chat_extra_btn_picture.png" width="76" height="76"/>
+        <image name="chat_extra_panel_bg.png" width="341" height="129"/>
+        <image name="chat_ic_voice_too_short.png" width="53" height="157"/>
+        <image name="chat_speaking_bg.png" width="181" height="181"/>
+        <image name="chat_speaking_icon_mic.png" width="127" height="145"/>
+        <image name="chat_speaking_state_0.png" width="91" height="15"/>
+        <image name="green_line.png" width="232" height="1"/>
+        <image name="titlebar_bg.png" width="640" height="107"/>
+        <image name="titlebar_bg_back_btn.png" width="121" height="59"/>
+        <image name="titlebar_btn_more_normal.png" width="59" height="59"/>
+        <image name="titlebar_btn_more_pressed.png" width="59" height="59"/>
+        <image name="titlebar_ic_back_arrow.png" width="21" height="26"/>
+        <image name="titlebar_ic_room.png" width="72" height="73"/>
+        <image name="titlebar_more_back.png" width="43" height="32"/>
+        <image name="titlebar_more_bg.png" width="109" height="92"/>
+        <image name="titlebar_more_divider.png" width="1" height="39"/>
+        <image name="titlebar_more_room_member.png" width="35" height="39"/>
+    </resources>
+</document>

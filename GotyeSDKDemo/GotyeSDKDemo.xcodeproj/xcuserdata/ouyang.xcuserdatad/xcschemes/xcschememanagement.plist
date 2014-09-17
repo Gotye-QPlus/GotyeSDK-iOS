@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SchemeUserState</key>
+	<dict>
+		<key>GotyeSDKDemo.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>5</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>30178CF6187A8FFB00301D6F</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>30178D11187A8FFB00301D6F</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>30178D2C187A906F00301D6F</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>30178D39187A907000301D6F</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>

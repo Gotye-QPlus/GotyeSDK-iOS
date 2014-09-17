@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.iPad.XIB" version="3.0" toolsVersion="5053" systemVersion="13C1021" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none">
+    <dependencies>
+        <deployment defaultVersion="1072" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="GotyeRoomUserListVC">
+            <connections>
+                <outlet property="_backBtn" destination="Lyd-8l-IXg" id="2U2-Et-h3e"/>
+                <outlet property="_backgroundView" destination="DlB-t2-cfC" id="8bB-0Q-WpV"/>
+                <outlet property="_titleLabel" destination="LYG-PC-tfX" id="xwC-BR-EFi"/>
+                <outlet property="_topView" destination="SUE-Ko-8IL" id="evN-FU-YO1"/>
+                <outlet property="_userGridView" destination="ycU-2Q-KkV" id="c75-sj-s56"/>
+                <outlet property="view" destination="1" id="vOg-h9-yMH"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="1">
+            <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chat_user_list_bg.png" id="WYB-jU-FNt">
+                    <rect key="frame" x="0.0" y="92" width="768" height="932"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                </imageView>
+                <view contentMode="scaleToFill" id="SUE-Ko-8IL">
+                    <rect key="frame" x="0.0" y="0.0" width="768" height="99"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="titlebar_bg.png" id="DL5-M4-eBt">
+                            <rect key="frame" x="0.0" y="0.0" width="768" height="99"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            <rect key="contentStretch" x="0.5" y="0.5" width="0.0" height="0.0"/>
+                        </imageView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Lyd-8l-IXg">
+                            <rect key="frame" x="20" y="26" width="98" height="48"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="23"/>
+                            <inset key="titleEdgeInsets" minX="0.0" minY="14" maxX="8" maxY="13"/>
+                            <inset key="imageEdgeInsets" minX="15" minY="14" maxX="66" maxY="13"/>
+                            <state key="normal" title="返回" image="titlebar_ic_back_arrow.png" backgroundImage="titlebar_bg_back_btn.png">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="highlighted">
+                                <color key="titleColor" red="1" green="1" blue="1" alpha="0.34999999999999998" colorSpace="calibratedRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="gobackBtnClicked:" destination="-1" eventType="touchUpInside" id="rZQ-p2-tma"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="用户列表" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="LYG-PC-tfX">
+                            <rect key="frame" x="126" y="9" width="516" height="80"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="35"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                </view>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" id="ycU-2Q-KkV" customClass="NRGridView">
+                    <rect key="frame" x="10" y="99" width="748" height="925"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="room_user_list_bg.png" id="DlB-t2-cfC">
+                            <rect key="frame" x="0.0" y="15" width="748" height="895"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            <rect key="contentStretch" x="0.5" y="0.5" width="0.0" height="0.0"/>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                </scrollView>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="chat_user_list_bg.png" width="60" height="60"/>
+        <image name="room_user_list_bg.png" width="130" height="124"/>
+        <image name="titlebar_bg.png" width="1536" height="198"/>
+        <image name="titlebar_bg_back_btn.png" width="195" height="95"/>
+        <image name="titlebar_ic_back_arrow.png" width="33" height="42"/>
+    </resources>
+</document>

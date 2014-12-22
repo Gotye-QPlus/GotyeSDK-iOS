@@ -25,7 +25,7 @@
         self.uniqueID = user.uniqueID;
         self.userID = user.userID;
         self.name = user.name;
-        self.avatarURL = user.avatarURL;
+        self.headValue = user.headValue;
         self.gender = user.gender;
     }
     
@@ -142,7 +142,7 @@
     assert(_currentUser.uniqueID);
     
     NSDictionary *infoMap = @{@"accountName": _currentUser.uniqueID,
-                              @"avatarURL": (_currentUser.avatarURL != nil ? _currentUser.avatarURL : @""),
+                              @"avatarURL": (_currentUser.headValue != nil ? _currentUser.headValue : @""),
                               @"userID": @(_currentUser.userID),
                               @"gender": @(_currentUser.gender),
                               @"nickName": (_currentUser.name != nil ? _currentUser.name : @"")};
@@ -165,7 +165,7 @@
     }
     
     _localCurrentUserInfo = [[GotyeUser alloc]initWithUniqueID:infoMap[@"accountName"]];
-    _localCurrentUserInfo.avatarURL = infoMap[@"avatarURL"];
+    _localCurrentUserInfo.headValue = infoMap[@"avatarURL"];
     _localCurrentUserInfo.gender = [infoMap[@"gender"]intValue];
     _localCurrentUserInfo.name = infoMap[@"nickName"];
     _localCurrentUserInfo.userID = [infoMap[@"userID"]intValue];
@@ -221,12 +221,12 @@
         sdkUserInfo.name = user.name;
         sdkUserInfo.gender = user.gender;
         sdkUserInfo.userID = user.userID;
-        sdkUserInfo.avatarURL = user.avatarURL;
+        sdkUserInfo.headValue = user.headValue;
     } else {
         sdkUserInfo = [[GotyeSDKUserInfo alloc]initWithUser:user];
     }
     
-    UIImage *newAvatar = [[GotyeImageManager sharedImageManager]getImageWithPath:sdkUserInfo.avatarURL];
+    UIImage *newAvatar = [[GotyeImageManager sharedImageManager]getImageWithPath:sdkUserInfo.headValue];
     if (newAvatar != nil) {
         sdkUserInfo.userAvatar = newAvatar;
     }
@@ -240,7 +240,7 @@
         if ([self needToModifyBaseUserInfo] || _avatarModified) {
             GotyeSDKUserInfo *modifyUser = [[GotyeSDKUserInfo alloc]initWithUniqueID:_currentUser.uniqueID];
             modifyUser.userID = _currentUser.userID;
-            modifyUser.avatarURL = _currentUser.avatarURL;
+            modifyUser.headValue = _currentUser.headValue;
             modifyUser.name = [GotyeSDKConfig sharedInstance].userNickName;
             modifyUser.gender = [GotyeSDKConfig sharedInstance].userGender;
             if (_avatarModified) {
@@ -265,8 +265,8 @@
 
     //保存修改的图片到本地，下次想要修改时先判断
     if (_avatarModified) {
-        _currentUser.avatarURL = user.avatarURL;
-        UIImage *newAvatar = [[GotyeImageManager sharedImageManager]getImageWithPath:user.avatarURL];
+        _currentUser.headValue = user.headValue;
+        UIImage *newAvatar = [[GotyeImageManager sharedImageManager]getImageWithPath:user.headValue];
         if (newAvatar != nil) {
             _currentUser.userAvatar = newAvatar;
         }
@@ -310,7 +310,7 @@
     
     for (NSString *userAccount in _cachedUserAccount ) {
         GotyeSDKUserInfo *cache = [(GotyeBaseCache *)[_userInfoCache objectForKey:userAccount]cachedObject];
-        if (cache == nil || ![cache.avatarURL isEqualToString:downloadURL]) {
+        if (cache == nil || ![cache.headValue isEqualToString:downloadURL]) {
             continue;
         }
         

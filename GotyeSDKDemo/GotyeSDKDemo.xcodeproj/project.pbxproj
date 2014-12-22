@@ -25,6 +25,7 @@
 		30A8B98F187FE4850040E70A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 30A8B989187FE4840040E70A /* main.m */; };
 		30A8B9B3187FE7FB0040E70A /* libGotyeSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 30A8B999187FE4AF0040E70A /* libGotyeSDK.a */; };
 		30A8B9B4187FE7FF0040E70A /* GotyeSDKResource.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 30A8B99D187FE4AF0040E70A /* GotyeSDKResource.bundle */; };
+		30A8B9BC187FEE370040E70A /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30A8B9BB187FEE370040E70A /* AdSupport.framework */; };
 		30AE35B118ADE04D00A41339 /* GotyeSDKDemo-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 30AE35B018ADE04D00A41339 /* GotyeSDKDemo-Info.plist */; };
 /* End PBXBuildFile section */
 
@@ -97,6 +98,7 @@
 				3023CBD318AA2537007B5D81 /* SystemConfiguration.framework in Frameworks */,
 				3023CBD118AA2489007B5D81 /* libz.1.2.5.dylib in Frameworks */,
 				30257BFE18840EAA00A6F30B /* CoreText.framework in Frameworks */,
+				30A8B9BC187FEE370040E70A /* AdSupport.framework in Frameworks */,
 				30A8B9B3187FE7FB0040E70A /* libGotyeSDK.a in Frameworks */,
 				3008ECA1187ECC8300E80A25 /* MediaPlayer.framework in Frameworks */,
 				3008EC95187ECC1800E80A25 /* CFNetwork.framework in Frameworks */,
@@ -228,7 +230,7 @@
 				ORGANIZATIONNAME = AiLiao;
 				TargetAttributes = {
 					30178CF6187A8FFB00301D6F = {
-						DevelopmentTeam = F2ZW285EQ2;
+						DevelopmentTeam = TBYH7JXTLY;
 					};
 				};
 			};

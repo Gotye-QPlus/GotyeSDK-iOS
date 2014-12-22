@@ -126,7 +126,7 @@ BOOL _showing;
 {
     UIImage *avatar = _userInfo.userAvatar;
     if (avatar == nil) {
-        avatar = [[GotyeImageManager sharedImageManager]getImageWithPath:_userInfo.headValue];
+        avatar = [[GotyeImageManager sharedImageManager]getImageWithPath:_userInfo.avatarURL];
         if (avatar == nil) {
             avatar = [GotyeSDKResource getDefaultAvatar];
         }
@@ -174,7 +174,7 @@ BOOL _showing;
         return;
     }
     
-    if (![downloadURL isEqualToString:_userInfo.headValue]) {
+    if (![downloadURL isEqualToString:_userInfo.avatarURL]) {
         return;
     }
     

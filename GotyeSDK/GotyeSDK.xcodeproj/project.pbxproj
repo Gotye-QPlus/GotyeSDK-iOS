@@ -8,8 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		21B6D1F719C8066E0037AF28 /* libGotyeAPI.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 21B6D1F619C8066E0037AF28 /* libGotyeAPI.a */; };
-		21B6D1FC19C80C7D0037AF28 /* GotyeRoom.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 21B6D1EF19C8066E0037AF28 /* GotyeRoom.h */; };
-		21B6D20119C80C970037AF28 /* GotyeChatUnit.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 21B6D1E719C8066E0037AF28 /* GotyeChatUnit.h */; };
+		21B6D1FC19C80C7D0037AF28 /* GotyeRoom.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 21B6D1EF19C8066E0037AF28 /* GotyeRoom.h */; };
+		21B6D20119C80C970037AF28 /* GotyeChatUnit.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 21B6D1E719C8066E0037AF28 /* GotyeChatUnit.h */; };
 		3000B5EF18A89D3F008BC548 /* chat_time_bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3000B5EE18A89D3F008BC548 /* chat_time_bg@2x.png */; };
 		3000B5F318A89D8D008BC548 /* chat_time_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 3000B5F218A89D8C008BC548 /* chat_time_bg.png */; };
 		3000B5F618A8D6B0008BC548 /* gotye_logo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3000B5F518A8D6B0008BC548 /* gotye_logo.jpg */; };
@@ -134,7 +134,7 @@
 		301C8B5F1889073F0079B428 /* GotyeFullScreenImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 301C8B5E1889073F0079B428 /* GotyeFullScreenImage.m */; };
 		301D715218C99417005E3FC9 /* GotyeTouchTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 301D715118C99417005E3FC9 /* GotyeTouchTableView.m */; };
 		301E513B187FA8540021A4F4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 301E513A187FA8540021A4F4 /* Foundation.framework */; };
-		301E5140187FA8550021A4F4 /* GotyeSDK.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 301E513F187FA8550021A4F4 /* GotyeSDK.h */; };
+		301E5140187FA8550021A4F4 /* GotyeSDK.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 301E513F187FA8550021A4F4 /* GotyeSDK.h */; };
 		301E5142187FA8550021A4F4 /* GotyeSDK.m in Sources */ = {isa = PBXBuildFile; fileRef = 301E5141187FA8550021A4F4 /* GotyeSDK.m */; };
 		301E5149187FA8550021A4F4 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 301E5148187FA8550021A4F4 /* XCTest.framework */; };
 		301E514A187FA8550021A4F4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 301E513A187FA8540021A4F4 /* Foundation.framework */; };
@@ -374,17 +374,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		301E5135187FA8540021A4F4 /* Copy Files */ = {
+		301E5135187FA8540021A4F4 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = include;
 			dstSubfolderSpec = 16;
 			files = (
-				21B6D20119C80C970037AF28 /* GotyeChatUnit.h in Copy Files */,
-				21B6D1FC19C80C7D0037AF28 /* GotyeRoom.h in Copy Files */,
-				301E5140187FA8550021A4F4 /* GotyeSDK.h in Copy Files */,
+				21B6D20119C80C970037AF28 /* GotyeChatUnit.h in CopyFiles */,
+				21B6D1FC19C80C7D0037AF28 /* GotyeRoom.h in CopyFiles */,
+				301E5140187FA8550021A4F4 /* GotyeSDK.h in CopyFiles */,
 			);
-			name = "Copy Files";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
@@ -1519,7 +1518,7 @@
 			buildPhases = (
 				301E5133187FA8540021A4F4 /* Sources */,
 				301E5134187FA8540021A4F4 /* Frameworks */,
-				301E5135187FA8540021A4F4 /* Copy Files */,
+				301E5135187FA8540021A4F4 /* CopyFiles */,
 			);
 			buildRules = (
 			);

@@ -12,14 +12,22 @@
 #import <sys/sysctl.h>
 #import <net/if.h>
 #import <net/if_dl.h>
-#import <AdSupport/ASIdentifierManager.h>
 
 @implementation GotyeDeviceUtil
 
 + (NSString *)getDeviceID
 {
     if (IOS_VERSION_GREATER_THAN_7_0) {
-        return [[[ASIdentifierManager sharedManager] advertisingIdentifier] UUIDString];
+//        return [[[ASIdentifierManager sharedManager] advertisingIdentifier] UUIDString];
+        CFUUIDRef uuid = CFUUIDCreate(NULL);
+        CFStringRef cfStr = CFUUIDCreateString(NULL, uuid);
+        
+        NSString *ret = [NSString stringWithString:CFBridgingRelease(cfStr)];
+        
+        CFRelease(uuid);
+        // CFRelease(cfStr);
+        
+        return ret;
     } else {
         return [self getMacAddress];
     }

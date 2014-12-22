@@ -1251,7 +1251,7 @@
     UIImage *avatar = sender.userAvatar;
     
     if (avatar == nil) {
-        avatar = [[GotyeImageManager sharedImageManager]getImageWithPath:sender.avatarURL];
+        avatar = [[GotyeImageManager sharedImageManager]getImageWithPath:sender.headValue];
         if (avatar == nil) {
             avatar = [GotyeSDKResource getDefaultAvatar];
         }

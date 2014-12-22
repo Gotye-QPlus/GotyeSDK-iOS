@@ -358,7 +358,7 @@ static NSString * const ordinaryCellIdentifier = @"GotyeOrdinaryRoomCell";
 {
     GotyeRoom *room = _roomArray[index];
 
-    UIImage *roomImage = [[GotyeImageManager sharedImageManager]getImageWithPath:room.roomImg];
+    UIImage *roomImage = [[GotyeImageManager sharedImageManager]getImageWithPath:room.headValue];
     if (roomImage == nil) {
         roomImage = [GotyeSDKResource getDefaultRoomImage];
     }

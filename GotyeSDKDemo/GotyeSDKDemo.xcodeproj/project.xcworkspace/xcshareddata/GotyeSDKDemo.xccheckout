@@ -12,27 +12,65 @@
 	<dict>
 		<key>0A0FFD17-7C99-49C8-B56A-BEBAF80D584D</key>
 		<string>https://192.168.1.18/svn/QINPLUS_SDK_VER2</string>
+		<key>50cbe5fa-67d4-dc42-94d9-000c24c5d4ba++211</key>
+		<string>https://192.168.1.18/svn/QINPLUS_SDK_VER2/Client/iOS</string>
+		<key>50cbe5fa-67d4-dc42-94d9-000c24c5d4ba++4848</key>
+		<string>https://192.168.1.18/svn/QINPLUS_SDK_VER2/Client/iOS/branches/GotyeSDK_OpenSource</string>
+		<key>E51ABDBD434A752FDFA22DD87F67ADA7B182B70E</key>
+		<string>https://github.com/Gotye-QPlus/GotyeSDK-iOS</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>branches/GotyeSDK_OpenSource/GotyeSDKDemo/GotyeSDKDemo.xcodeproj/project.xcworkspace</string>
+	<string>GotyeSDKDemo/GotyeSDKDemo.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>0A0FFD17-7C99-49C8-B56A-BEBAF80D584D</key>
-		<string>../../../../../..</string>
+		<string>../../../../QINPLUS_SDK_VER2</string>
+		<key>50cbe5fa-67d4-dc42-94d9-000c24c5d4ba++211</key>
+		<string>../../../..</string>
+		<key>50cbe5fa-67d4-dc42-94d9-000c24c5d4ba++4848</key>
+		<string>../../..</string>
+		<key>E51ABDBD434A752FDFA22DD87F67ADA7B182B70E</key>
+		<string>../../..</string>
 	</dict>
 	<key>IDESourceControlProjectRepositoryRootDictionary</key>
 	<dict>
-		<key>0A0FFD17-7C99-49C8-B56A-BEBAF80D584D</key>
+		<key>50cbe5fa-67d4-dc42-94d9-000c24c5d4ba++211</key>
+		<string>https://192.168.1.18/svn/QINPLUS_SDK_VER2</string>
+		<key>50cbe5fa-67d4-dc42-94d9-000c24c5d4ba++4848</key>
 		<string>https://192.168.1.18/svn/QINPLUS_SDK_VER2</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>https://192.168.1.18/svn/QINPLUS_SDK_VER2/Client/iOS/trunk/GotyeSDKDemo/GotyeSDKDemo.xcodeproj</string>
+	<string>https://192.168.1.18/svn/QINPLUS_SDK_VER2/Client/iOS/branches/GotyeSDK_OpenSource/GotyeSDKDemo/GotyeSDKDemo.xcodeproj</string>
 	<key>IDESourceControlProjectVersion</key>
-	<integer>110</integer>
+	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>0A0FFD17-7C99-49C8-B56A-BEBAF80D584D</string>
+	<string>50cbe5fa-67d4-dc42-94d9-000c24c5d4ba++4848</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.subversion</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>50cbe5fa-67d4-dc42-94d9-000c24c5d4ba++211</string>
+			<key>IDESourceControlWCCName</key>
+			<string></string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.subversion</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>50cbe5fa-67d4-dc42-94d9-000c24c5d4ba++4848</string>
+			<key>IDESourceControlWCCName</key>
+			<string>GotyeSDK_OpenSource</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>E51ABDBD434A752FDFA22DD87F67ADA7B182B70E</string>
+			<key>IDESourceControlWCCName</key>
+			<string>GotyeSDK_OpenSource</string>
+		</dict>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.subversion</string>

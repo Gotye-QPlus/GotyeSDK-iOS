@@ -28,17 +28,16 @@
       shouldUseLaunchSchemeArgsEnv = "YES"
       buildConfiguration = "Debug">
       <Testables>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "301E5146187FA8550021A4F4"
-               BuildableName = "GotyeSDKTests.xctest"
-               BlueprintName = "GotyeSDKTests"
-               ReferencedContainer = "container:GotyeSDK.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
       </Testables>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "301E5136187FA8540021A4F4"
+            BuildableName = "libGotyeSDK.a"
+            BlueprintName = "GotyeSDK"
+            ReferencedContainer = "container:GotyeSDK.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
    </TestAction>
    <LaunchAction
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
@@ -49,6 +48,15 @@
       ignoresPersistentStateOnLaunch = "NO"
       debugDocumentVersioning = "YES"
       allowLocationSimulation = "YES">
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "301E5136187FA8540021A4F4"
+            BuildableName = "libGotyeSDK.a"
+            BlueprintName = "GotyeSDK"
+            ReferencedContainer = "container:GotyeSDK.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
@@ -58,6 +66,15 @@
       useCustomWorkingDirectory = "NO"
       buildConfiguration = "Release"
       debugDocumentVersioning = "YES">
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "301E5136187FA8540021A4F4"
+            BuildableName = "libGotyeSDK.a"
+            BlueprintName = "GotyeSDK"
+            ReferencedContainer = "container:GotyeSDK.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">

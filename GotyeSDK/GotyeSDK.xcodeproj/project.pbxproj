@@ -136,10 +136,6 @@
 		301E513B187FA8540021A4F4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 301E513A187FA8540021A4F4 /* Foundation.framework */; };
 		301E5140187FA8550021A4F4 /* GotyeSDK.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 301E513F187FA8550021A4F4 /* GotyeSDK.h */; };
 		301E5142187FA8550021A4F4 /* GotyeSDK.m in Sources */ = {isa = PBXBuildFile; fileRef = 301E5141187FA8550021A4F4 /* GotyeSDK.m */; };
-		301E5149187FA8550021A4F4 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 301E5148187FA8550021A4F4 /* XCTest.framework */; };
-		301E514A187FA8550021A4F4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 301E513A187FA8540021A4F4 /* Foundation.framework */; };
-		301E514F187FA8550021A4F4 /* libGotyeSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 301E5137187FA8540021A4F4 /* libGotyeSDK.a */; };
-		301E5157187FA8550021A4F4 /* GotyeSDKTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 301E5156187FA8550021A4F4 /* GotyeSDKTests.m */; };
 		301E5185187FA8D70021A4F4 /* GotyeImageCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 301E5164187FA8D60021A4F4 /* GotyeImageCache.m */; };
 		301E5186187FA8D70021A4F4 /* GotyeImageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 301E5166187FA8D60021A4F4 /* GotyeImageManager.m */; };
 		301E5187187FA8D70021A4F4 /* TMCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 301E5168187FA8D60021A4F4 /* TMCache.m */; };
@@ -363,16 +359,6 @@
 		30FADE2518D8449300A1A339 /* chat_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 30FADE2418D8449300A1A339 /* chat_bg.png */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		301E514D187FA8550021A4F4 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 301E512F187FA8540021A4F4 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 301E5136187FA8540021A4F4;
-			remoteInfo = GotyeSDK;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXCopyFilesBuildPhase section */
 		301E5135187FA8540021A4F4 /* Copy Files */ = {
 			isa = PBXCopyFilesBuildPhase;
@@ -576,10 +562,6 @@
 		301E513E187FA8550021A4F4 /* GotyeSDK-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GotyeSDK-Prefix.pch"; sourceTree = "<group>"; };
 		301E513F187FA8550021A4F4 /* GotyeSDK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GotyeSDK.h; sourceTree = "<group>"; };
 		301E5141187FA8550021A4F4 /* GotyeSDK.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GotyeSDK.m; sourceTree = "<group>"; };
-		301E5147187FA8550021A4F4 /* GotyeSDKTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GotyeSDKTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		301E5148187FA8550021A4F4 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		301E5152187FA8550021A4F4 /* GotyeSDKTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GotyeSDKTests-Info.plist"; sourceTree = "<group>"; };
-		301E5156187FA8550021A4F4 /* GotyeSDKTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GotyeSDKTests.m; sourceTree = "<group>"; };
 		301E5163187FA8D60021A4F4 /* GotyeImageCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GotyeImageCache.h; sourceTree = "<group>"; };
 		301E5164187FA8D60021A4F4 /* GotyeImageCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GotyeImageCache.m; sourceTree = "<group>"; };
 		301E5165187FA8D60021A4F4 /* GotyeImageManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GotyeImageManager.h; sourceTree = "<group>"; };
@@ -851,16 +833,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		301E5144187FA8550021A4F4 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				301E5149187FA8550021A4F4 /* XCTest.framework in Frameworks */,
-				301E514F187FA8550021A4F4 /* libGotyeSDK.a in Frameworks */,
-				301E514A187FA8550021A4F4 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		301E5196187FA9120021A4F4 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -986,7 +958,6 @@
 			isa = PBXGroup;
 			children = (
 				301E513C187FA8540021A4F4 /* GotyeSDK */,
-				301E5150187FA8550021A4F4 /* GotyeSDKTests */,
 				301E51A0187FA9120021A4F4 /* GotyeSDKResource */,
 				301E5139187FA8540021A4F4 /* Frameworks */,
 				301E5138187FA8540021A4F4 /* Products */,
@@ -997,7 +968,6 @@
 			isa = PBXGroup;
 			children = (
 				301E5137187FA8540021A4F4 /* libGotyeSDK.a */,
-				301E5147187FA8550021A4F4 /* GotyeSDKTests.xctest */,
 				301E5199187FA9120021A4F4 /* GotyeSDKResource.bundle */,
 			);
 			name = Products;
@@ -1007,7 +977,6 @@
 			isa = PBXGroup;
 			children = (
 				301E513A187FA8540021A4F4 /* Foundation.framework */,
-				301E5148187FA8550021A4F4 /* XCTest.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -1029,23 +998,6 @@
 			children = (
 				301E513E187FA8550021A4F4 /* GotyeSDK-Prefix.pch */,
 				3007FBFD18E0529E00B89397 /* GotyeReplaceMacro.h */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		301E5150187FA8550021A4F4 /* GotyeSDKTests */ = {
-			isa = PBXGroup;
-			children = (
-				301E5156187FA8550021A4F4 /* GotyeSDKTests.m */,
-				301E5151187FA8550021A4F4 /* Supporting Files */,
-			);
-			path = GotyeSDKTests;
-			sourceTree = "<group>";
-		};
-		301E5151187FA8550021A4F4 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				301E5152187FA8550021A4F4 /* GotyeSDKTests-Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -1530,24 +1482,6 @@
 			productReference = 301E5137187FA8540021A4F4 /* libGotyeSDK.a */;
 			productType = "com.apple.product-type.library.static";
 		};
-		301E5146187FA8550021A4F4 /* GotyeSDKTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 301E515D187FA8550021A4F4 /* Build configuration list for PBXNativeTarget "GotyeSDKTests" */;
-			buildPhases = (
-				301E5143187FA8550021A4F4 /* Sources */,
-				301E5144187FA8550021A4F4 /* Frameworks */,
-				301E5145187FA8550021A4F4 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				301E514E187FA8550021A4F4 /* PBXTargetDependency */,
-			);
-			name = GotyeSDKTests;
-			productName = GotyeSDKTests;
-			productReference = 301E5147187FA8550021A4F4 /* GotyeSDKTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 		301E5198187FA9120021A4F4 /* GotyeSDKResource */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 301E51A7187FA9120021A4F4 /* Build configuration list for PBXNativeTarget "GotyeSDKResource" */;
@@ -1588,20 +1522,12 @@
 			projectRoot = "";
 			targets = (
 				301E5136187FA8540021A4F4 /* GotyeSDK */,
-				301E5146187FA8550021A4F4 /* GotyeSDKTests */,
 				301E5198187FA9120021A4F4 /* GotyeSDKResource */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		301E5145187FA8550021A4F4 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		301E5197187FA9120021A4F4 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -1964,14 +1890,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		301E5143187FA8550021A4F4 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				301E5157187FA8550021A4F4 /* GotyeSDKTests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		301E5195187FA9120021A4F4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -1980,14 +1898,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		301E514E187FA8550021A4F4 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 301E5136187FA8540021A4F4 /* GotyeSDK */;
-			targetProxy = 301E514D187FA8550021A4F4 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		301E5158187FA8550021A4F4 /* Debug */ = {
@@ -2133,44 +2043,6 @@
 			};
 			name = Release;
 		};
-		301E515E187FA8550021A4F4 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "GotyeSDK/GotyeSDK-Prefix.pch";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = "GotyeSDKTests/GotyeSDKTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Debug;
-		};
-		301E515F187FA8550021A4F4 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "GotyeSDK/GotyeSDK-Prefix.pch";
-				INFOPLIST_FILE = "GotyeSDKTests/GotyeSDKTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Release;
-		};
 		301E51A8187FA9120021A4F4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -2233,15 +2105,6 @@
 			buildConfigurations = (
 				301E515B187FA8550021A4F4 /* Debug */,
 				301E515C187FA8550021A4F4 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		301E515D187FA8550021A4F4 /* Build configuration list for PBXNativeTarget "GotyeSDKTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				301E515E187FA8550021A4F4 /* Debug */,
-				301E515F187FA8550021A4F4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
